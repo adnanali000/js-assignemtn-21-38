@@ -198,10 +198,90 @@
 // alert("user input: "+usrIn+"\r\n"+"Last character of input: "+lastChr);
 
 
-// task18
+// // task18
 
-var text = "the quick brown fox jumps over the lazy dog";
-var countThe = (text.match(/the/g)).length;
-document.write("Text: "+"the quick brown fox jumps over the lazy dog"+"<br>");
-document.write("There are "+countThe+" occurrence(s) of word 'the'")
+// var text = "the quick brown fox jumps over the lazy dog";
+// var countThe = (text.match(/the/g)).length;
+// document.write("Text: "+"the quick brown fox jumps over the lazy dog"+"<br>");
+// document.write("There are "+countThe+" occurrence(s) of word 'the'")
 
+
+// // chapter 26-30
+
+// // task1
+// var num = prompt("enter positive integer");
+// document.write("number: "+num+"<br>");
+// document.write("round of value: "+Math.round(num)+"<br>")
+// document.write("floor value: "+Math.floor(num)+"<br>");
+// document.write("ceil value: "+Math.ceil(num));
+
+// // task2
+
+// var num = prompt("enter negative integer");
+// document.write("number: "+num+"<br>");
+// document.write("round of value: "+Math.round(num)+"<br>")
+// document.write("floor value: "+Math.floor(num)+"<br>");
+// document.write("ceil value: "+Math.ceil(num));
+
+
+// // task3
+// var num = prompt("enter number");
+// var numabs = Math.abs(num);
+// document.write("The absolute value of "+num+" is "+numabs);
+
+// // task4
+
+// var ranNum = Math.random();
+// var ranSix = (ranNum * 6) + 1;
+// var ranSixFlr = Math.floor(ranSix);
+// document.write("random dice value: "+ranSixFlr);
+
+
+// // task5
+
+// var coin = Math.random();
+// var headTail = (coin * 2) + 1;
+// var headTailFlr = Math.floor(headTail);
+
+// if(headTailFlr == 2){
+//     document.write(headTailFlr+"<br>")
+//     document.write("random coin value: Heads")
+// }
+// else{
+//     document.write(headTailFlr+"<br>")
+//     document.write("random coin value: Tails")
+
+// }
+
+
+// // task6
+
+// var number = Math.random();
+// var numberHund = (number * 100) + 1;
+// var numberHundFlr = Math.floor(numberHund);
+
+// document.write("random number between 1 and 100: "+numberHundFlr);
+
+
+// // task7
+
+// var weight = prompt("enter your weight in kilograms");
+// var weightPar = parseInt(weight) + 8.3;
+
+// document.write("The weight of user is "+weightPar+" kilograms");
+
+
+
+// // task8
+
+// var secNum = Math.random();
+// var secOne_Ten = (secNum * 10) + 1;
+// var secOne_Ten_Flr = Math.floor(secOne_Ten);
+// alert(secOne_Ten_Flr)
+// var user = prompt("Enter a number between 1-10");
+// if(user == secOne_Ten_Flr){
+//     alert("congratulation");
+// }
+// else{
+//     alert("Try again");
+// }
