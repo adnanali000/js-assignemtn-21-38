@@ -398,21 +398,14 @@
 //  rn.setFullYear(1920);
 //  document.write("100 years back, it was: "+rn);
 
-// task13
+// // task13
 
 
-var age = prompt("What is your age?");
-document.write("Your age is: "+age);
-
-
-
-
-
-
-
-
-
-
+// var age = prompt("What is your age?");
+// document.write("Your age is: "+age+"<br>");
+// var rn = new Date();
+// var birthYear = rn.getFullYear() - age;
+// document.write("your birth year is: "+birthYear);
 
 
 // // task14
