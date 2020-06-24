@@ -285,3 +285,153 @@
 // else{
 //     alert("Try again");
 // }
+
+
+// //chapter 31-34
+
+// // task1
+// var rn = new Date();
+// document.write(rn);
+
+// // task2
+
+// var rn = new Date();
+// var month = ["january","february","march","april","may","june","july","august","september","october","november","december"];
+// var monthInWord = month[rn.getMonth()];
+// document.write("current month: "+monthInWord);
+
+
+// // task3
+
+// var rn = new Date();
+// var days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+// var dayInWord = days[rn.getDay()];
+// var dayThree = dayInWord.slice(0,3);
+// alert("Today is: "+dayThree);
+
+// // task4
+
+// var rn = new Date();
+// var days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+// var dayInWord = days[rn.getDay()];
+
+// if(dayInWord == "sunday" || dayInWord == "saturday"){
+//     alert("It's fun day");
+// }
+// else{
+//     alert("normal day");
+// }
+
+// // task5
+
+// var rn = new Date();
+// var dat = rn.getDate();
+
+// if(dat < 16){
+//     alert("First fifteen days of the month")
+// }
+// else{
+//     alert("last days of the month");
+// }
+
+
+// // task6
+
+// var rn = new Date();
+// var since1970 = rn.getTime();
+// var min = since1970 / 1000 * 60;
+
+// document.write("current date: "+rn+"<br>");
+// document.write("Elapsed milliseconds sice january 1,1970: "+since1970+"<br>");
+// document.write("Elapsed minutes sice january 1,1970: "+min);
+
+
+// // task7
+
+// var rn = new Date();
+// var time = rn.getHours();
+
+// if(time < 12){
+//     alert("It's AM")
+// }
+// else{
+//     alert("It's PM");
+// }
+
+
+// // task8
+
+// var lastdate = new Date("December 31, 2020");
+// var laterDate = new Date(lastdate);
+// alert("later date: "+laterDate);
+
+// // task9
+
+// var firstRam = new Date("June 18, 2015");
+// var rn = new Date("June 24, 2020");
+// var diff = rn.getTime() - firstRam.getTime();
+// var SinceDays = diff / (1000 * 60 * 60 * 24);
+// document.write(SinceDays+ " days have passed since 1st Ramadan, 2015");
+
+// // task10
+
+// var refDate = new Date("Dec 05, 2015");
+// var begDate = new Date("jan 01, 2015");
+// var diff = refDate.getTime() - begDate.getTime();
+// var sec = diff / 1000;
+// document.write(sec+" seconds had passed since beginning of 2015");
+
+
+// // task11
+
+// var rn = new Date(2020,5,25,00,35,30);
+// document.write("curent date: "+rn+"<br>");
+
+// rn = new Date(2020,5,24,23,35,30);
+// document.write("1 hour ago it was: "+rn);
+
+
+// // task12
+
+//  var rn = new Date();
+//  document.write("current date: "+rn+"<br>");
+//  rn.setFullYear(1920);
+//  document.write("100 years back, it was: "+rn);
+
+// task13
+
+
+var age = prompt("What is your age?");
+document.write("Your age is: "+age);
+
+
+
+
+
+
+
+
+
+
+
+
+// // task14
+
+// document.write("K-Electric Bill"+"<br>");
+// var name = "ADNAN";
+// var month = "February";
+// var unit = Math.round(410).toFixed(2);
+// var charge = Math.round(16).toFixed(2);
+// var netAmount_withInDue = unit * charge;
+// var latePay = 350;
+// var grossAmount_afterDue = (netAmount_withInDue + latePay);
+
+// document.write("Customer name: "+name+"<br>");
+// document.write("Month: "+month+"<br>");
+// document.write("Number of units: "+unit+"<br>");
+// document.write("charges per unit: "+charge+"<br>"+"<br>");
+
+// document.write("Net amount payable with in due date: "+Math.round(netAmount_withInDue).toFixed(2)+"<br>");
+// document.write("Late payment surcharge: "+Math.round(latePay).toFixed(2)+"<br>");
+// document.write("Gross amount payable after due date: "+Math.round(grossAmount_afterDue).toFixed(2)+"<br>");
+
