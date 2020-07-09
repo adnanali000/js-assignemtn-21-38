@@ -428,3 +428,206 @@
 // document.write("Late payment surcharge: "+Math.round(latePay).toFixed(2)+"<br>");
 // document.write("Gross amount payable after due date: "+Math.round(grossAmount_afterDue).toFixed(2)+"<br>");
 
+
+// //chapter 35-38
+
+// //task1
+
+// function currentDate(){
+
+//     var a = new Date();
+//     alert(a);
+// }
+// currentDate();
+
+
+// // task2
+
+// function greet(firstname,lastname){
+//     alert("welcome "+firstname + " "+lastname);
+// }
+// greet("steves","jobs");
+
+// // task3
+
+// function add(num1,num2){
+//     return num1 + num2;
+// }
+
+// var plus = add(5,10);
+// alert(plus);
+
+
+// // task4
+
+// function calculator(num1,num2,ope){
+//     if(ope == '+'){
+//         return num1 + num2
+//     }
+//     else if(ope == '-'){
+//         return num1 - num2;
+//     }
+//     else if(ope == '*'){
+//         return num1*num2;
+//     }
+//     else if(ope == '/'){
+//         return num1 / num2;
+//     }
+//     else{
+//         return "wrong input";
+//     }
+// }
+
+// var result = calculator(10,2,'/');
+// alert("Result: "+result);
+
+// // task5
+
+// function square(num){
+//     return Math.pow(num,2);
+// }
+// var sq = square(7);
+// alert("Square is: "+sq);
+
+
+// // task6
+
+// function factorial(num){
+//     if(num == 0){
+//         return 1;
+//     }
+//     else{
+//         return num * factorial(num - 1);
+//     }
+   
+// }
+
+// var res = factorial(5);
+// alert("Factorial is: "+res);
+
+
+// // task7
+
+// function counting(start,end){
+//     for(var i = start; i <= end; i++){
+//         document.write(i+"<br>");
+//     }
+// }
+// counting(1,20);
+
+
+// // task8
+
+// function hyp(bas,per){
+//        var hyp = Math.pow(bas,2) + Math.pow(per,2);
+//        alert("hypotenuse2: "+hyp);
+
+//        function hypsqroot(hyp){
+               
+//            alert("hypotenuse: "+Math.sqrt(hyp))
+//        }
+//        hypsqroot(hyp)
+// }
+
+// hyp(10,5)
+
+
+// //task9
+
+// function Area(width = 10,height = 20){
+//        alert("Area: "+width*height);
+// }
+// Area(5,4);
+
+
+
+// // task10
+
+// function palindrome(word){
+//     var check = "";
+//     for(var i = word.length - 1; i >= 0; i--){
+//         check += word[i];
+//     }
+//     if(word == check){
+//         alert("word is palindrome word");
+//     }
+//     else{
+//         alert("not a palindrome word");
+//     }
+// }
+// palindrome("madam");
+
+
+
+// // task11
+// function str(sentence){
+//     var arr = sentence.split(" ");
+//     for(var i = 0; i < arr.length; i++)
+//     {
+//         var word = arr[i];
+//         var firstLet = word.slice(0,1);
+//         var firstLetCap = firstLet.toUpperCase();
+        
+//         var rem = word.slice(1);
+//         var sent = firstLetCap + rem;
+//         document.write(sent+" ");
+//     }
+     
+    
+// }
+// str("the quick brown fox");
+
+
+// // task12
+
+// function longStr(sent){
+
+//     document.write(sent+"<br>");
+//     var word = sent.split(" ");
+//     for(var i = 0; i < word.length; i++){
+//         if(word[0].length > word[i].length){
+//             document.write(word[0]);
+//             break;
+//         }
+//         else if(word[1].length > word[i].length){
+//             document.write(word[1])
+//             break;
+//         }
+//         else if(word[2].length > word[i].length){
+//             document.write(word[2])
+//             break;
+//         }
+//         else{
+//             document.write("sorry")
+//             break;
+//         }
+//     }
+
+    
+
+// }
+// longStr("web Development Tutorial")
+
+
+// // task13
+
+// function occur(str,alpha){
+//     document.write(str.split(alpha).length-1);
+// }
+// occur('JSResourceS.com','o')
+
+
+// // task14
+
+function calcCircumference(radius){
+        alert("circumference: "+(2 * 3.142 * radius));
+
+        function calcArea(radius){
+            alert("The Area is: "+ (3.142 * Math.pow(radius,2)));
+
+        }
+        calcArea(radius);
+}
+calcCircumference(3);
+
+
